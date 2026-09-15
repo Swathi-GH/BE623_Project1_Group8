@@ -5,24 +5,24 @@ from Bio.Seq import Seq
 genes = {
     "TP53": {
         "category": "nuclear",
-        "mrna_file": "data/TP53_mRNA.fasta",
-        "protein_file": "data/TP53_protein.fasta",
+        "mrna_file": "../data/TP53_mRNA.fasta",
+        "protein_file": "../data/TP53_protein.fasta",
         "cds_start": 143,
         "cds_end": 1324
     },
 
     "SELENOK": {
         "category": "selenoprotein",
-        "mrna_file": "data/selenok.fasta",
-        "protein_file": "data/selenok_prtn.fasta",
+        "mrna_file": "../data/selenok.fasta",
+        "protein_file": "../data/selenok_prtn.fasta",
         "cds_start": 72,
         "cds_end": 356
     },
 
     "MT-ND5": {
         "category": "mitochondrial",
-        "mrna_file": "data/nd5.fasta",
-        "protein_file": "data/nd5_protein.fasta",
+        "mrna_file": "../data/nd5.fasta",
+        "protein_file": "../data/nd5_protein.fasta",
 	"cds_start": 1,
 	"cds_end": 1812
     },
@@ -58,7 +58,7 @@ def check_cds_length(cds_sequence):
 	else:
 		return length, False
 
-#creating genetic code
+#creating genetic code for nuclear gene
 
 
 genetic_code_nuclear = {
@@ -135,7 +135,7 @@ genetic_code_nuclear = {
 
 
 
-
+#creating genetic code for selenoprotein
 
 genetic_code_selenocys = {
     #Phenylalanine (F)
@@ -195,10 +195,74 @@ genetic_code_selenocys = {
 
 
 
+#creating genetic code  mitochondria
 
-
-
-
+genetic_code_mito = {
+    "TTT": "F",
+    "TTC": "F",
+    "TTA": "L",
+    "TTG": "L",
+    "CTT": "L",
+    "CTC": "L",
+    "CTA": "L",
+    "CTG": "L",
+    "ATT": "I",
+    "ATC": "I",
+    "ATA": "M",
+    "ATG": "M",
+    "GTT": "V",
+    "GTC": "V",
+    "GTA": "V",
+    "GTG": "V",
+    "TCT": "S",
+    "TCC": "S",
+    "TCA": "S",
+    "TCG": "S",
+    "CCT": "P",
+    "CCC": "P",
+    "CCA": "P",
+    "CCG": "P",
+    "ACT": "T",
+    "ACC": "T",
+    "ACA": "T",
+    "ACG": "T",
+    "GCT": "A",
+    "GCG": "A",
+    "GCA": "A",
+    "GCC": "A",
+    "TAT": "Y",
+    "TAC": "Y",
+    "TAA": "*",
+    "TAG": "*",
+    "CAT": "H",
+    "CAC": "H",
+    "CAA": "Q",
+    "CAG": "Q",
+    "AAT": "N",
+    "AAC": "N",
+    "AAA": "K",
+    "AAG": "K",
+    "GAT": "D",
+    "GAC": "D",
+    "GAA": "E",
+    "GAG": "E",
+    "TGT": "C",
+    "TGC": "C",
+    "TGA": "W",
+    "TGG": "W",
+    "CGT": "R",
+    "CGC": "R",
+    "CGA": "R",
+    "CGG": "R",
+    "AGT": "S",
+    "AGC": "S",
+    "AGA": "*",
+    "AGG": "*",
+    "GGT": "G",
+    "GGC": "G",
+    "GGA": "G",
+    "GGG": "G",
+}
 
 
 def translate_cds(cds_sequence, genetic_code):
@@ -207,7 +271,7 @@ def translate_cds(cds_sequence, genetic_code):
 	for i in range(0, len(cds_sequence), 3):
 		codon = cds_sequence[i:i+3]
 		amino_acid = genetic_code[codon]
-		protein = protein + amino acid
+		protein = protein + amino_acid
 
 	return protein
 
@@ -246,15 +310,84 @@ def process_gene(gene_name, gene_info, genetic_code):
         deposited_protein
     )
 
-    return cds_sequence, translated_protein, deposited_protein, differences, first_mismatch
+    return (
+        cds_sequence,
+        translated_protein,
+        deposited_protein,
+        differences,
+        first_mismatch
+    )
 
+
+# Choose the correct genetic code for each gene
+genetic_codes = {
+    "SELENOK": genetic_code_nuclear,
+    "MT-ND5": genetic_code_mito,
+    "TP53": genetic_code_nuclear
+}
+
+
+# Process each gene and store results
+summary = []
 
 for gene_name in genes:
     gene_info = genes[gene_name]
     genetic_code = genetic_codes[gene_name]
 
-    results = process_gene(
+    (
+        cds_sequence,
+        translated_protein,
+        deposited_protein,
+        differences,
+        first_mismatch
+    ) = process_gene(gene_name, gene_info, genetic_code)
+
+    status = "Match" if differences == 0 else "Mismatch"
+
+    summary.append([
         gene_name,
-        gene_info,
-        genetic_code
+        len(cds_sequence),
+        len(translated_protein),
+        len(deposited_protein),
+        differences,
+        first_mismatch,
+        status
+    ])
+
+    print("\n" + "=" * 50)
+    print("Gene:", gene_name)
+    print("CDS length:", len(cds_sequence), "nt")
+    print("Translated protein length:", len(translated_protein))
+    print("Deposited protein length:", len(deposited_protein))
+    print("Total differences:", differences)
+    print("First mismatch:", first_mismatch)
+    print("Status:", status)
+
+
+# Final summary table
+print("\n" + "=" * 90)
+print("SUMMARY TABLE")
+print("=" * 90)
+
+print(
+    f'{"Gene":<12}'
+    f'{"CDS(nt)":<10}'
+    f'{"Translated":<12}'
+    f'{"Deposited":<11}'
+    f'{"Diff":<8}'
+    f'{"First":<8}'
+    f'{"Status"}'
+)
+
+print("-" * 90)
+
+for row in summary:
+    print(
+        f"{row[0]:<12}"
+        f"{row[1]:<10}"
+        f"{row[2]:<12}"
+        f"{row[3]:<11}"
+        f"{row[4]:<8}"
+        f"{str(row[5]):<8}"
+        f"{row[6]}"
     )
