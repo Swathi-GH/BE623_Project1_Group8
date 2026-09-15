@@ -391,3 +391,18 @@ for row in summary:
         f"{str(row[5]):<8}"
         f"{row[6]}"
     )
+
+# Save summary table
+with open("../results/summary_table.tsv", "w") as fh:
+    fh.write("Gene\tCDS(nt)\tTranslated\tDeposited\tDiff\tFirst\tStatus\n")
+
+    for row in summary:
+        fh.write(
+            f"{row[0]}\t"
+            f"{row[1]}\t"
+            f"{row[2]}\t"
+            f"{row[3]}\t"
+            f"{row[4]}\t"
+            f"{row[5]}\t"
+            f"{row[6]}\n"
+        )
