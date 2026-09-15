@@ -60,6 +60,83 @@ def check_cds_length(cds_sequence):
 
 #creating genetic code
 
+
+genetic_code_nuclear = {
+    "TTT" : "F",
+    "TTC" : "F",
+    "TTA" : "L",
+    "TTG" : "L",
+    "CTT" : "L",
+    "CTC" : "L",
+    "CTA" : "L",
+    "CTG" : "L",
+    "ATT" : "I",
+    "ATC" : "I",
+    "ATA" : "I",
+    "ATG" : "M",
+    "GTT" : "V",
+    "GTC" : "V",
+    "GTA" : "V",
+    "GTG" : "V",
+    "TCT" : "S",
+    "TCC" : "S",
+    "TCA" : "S",
+    "TCG" : "S",
+    "CCT" : "P",
+    "CCC" : "P",
+    "CCA" : "P",
+    "CCG" : "P",
+    "ACT" : "T",
+    "ACC" : "T",
+    "ACA" : "T",
+    "ACG" : "T",
+    "GCT" : "A",
+    "GCC" : "A",
+    "GCA" : "A",
+    "GCG" : "A",
+    "TAT" : "Y",
+    "TAC" : "Y",
+    "TAA" : "*",
+    "TAG" : "*",
+    "CAT" : "H",
+    "CAC" : "H",
+    "CAA" : "Q",
+    "CAG" : "Q",
+    "AAT" : "N",
+    "AAC" : "N",
+    "AAA" : "K",
+    "AAG" : "K",
+    "GAT" : "D",
+    "GAC" : "D",
+    "GAA" : "E",
+    "GAG" : "E",
+    "TGT" : "C",
+    "TGC" : "C",
+    "TGA" : "*",
+    "TGG" : "W",
+    "CGT" : "R",
+    "CGC" : "R",
+    "CGA" : "R",
+    "CGG" : "R",
+    "AGT" : "S",
+    "AGC" : "S",
+    "AGA" : "R",
+    "AGG" : "R",
+    "GGT" : "G",
+    "GGC" : "G",
+    "GGA" : "G",
+    "GGG" : "G",
+}
+
+
+
+
+
+
+
+
+
+
 genetic_code_selenocys = {
     #Phenylalanine (F)
     "TTT": "F", "TTC": "F",
@@ -134,3 +211,50 @@ def translate_cds(cds_sequence, genetic_code):
 
 	return protein
 
+
+def compare_proteins(protein1, protein2):
+    differences = 0
+    first_mismatch = 0
+    position = 1
+
+    for a, b in zip(protein1, protein2):
+        if a != b:
+            differences = differences + 1
+
+            if first_mismatch == 0:
+                first_mismatch = position
+
+        position = position + 1
+
+    return differences, first_mismatch
+
+def process_gene(gene_name, gene_info, genetic_code):
+    mrna = read_fasta(gene_info["mrna_file"])
+
+    cds_sequence = extract_cds(
+        mrna,
+        gene_info["cds_start"],
+        gene_info["cds_end"]
+    )
+
+    translated_protein = translate_cds(cds_sequence, genetic_code)
+
+    deposited_protein = read_fasta(gene_info["protein_file"])
+
+    differences, first_mismatch = compare_proteins(
+        translated_protein,
+        deposited_protein
+    )
+
+    return cds_sequence, translated_protein, deposited_protein, differences, first_mismatch
+
+
+for gene_name in genes:
+    gene_info = genes[gene_name]
+    genetic_code = genetic_codes[gene_name]
+
+    results = process_gene(
+        gene_name,
+        gene_info,
+        genetic_code
+    )
