@@ -1,0 +1,280 @@
+LOCUS       NM_021237               1497 bp    mRNA    linear   PRI 22-JUN-2025
+DEFINITION  Homo sapiens selenoprotein K (SELENOK), mRNA.
+ACCESSION   NM_021237 NM_145281
+VERSION     NM_021237.5
+KEYWORDS    RefSeq; MANE Select.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 1497)
+  AUTHORS   Li,J., Zhao,L., Wu,Z., Huang,S., Wang,J., Chang,Y., Liu,L., Jin,H.,
+            Lu,J., Huang,C., Xie,Q., Huang,H. and Su,Z.
+  TITLE     SelK promotes glioblastoma cell proliferation by inhibiting
+            beta-TrCP1 mediated ubiquitin-dependent degradation of CDK4
+  JOURNAL   J Exp Clin Cancer Res 43 (1), 231 (2024)
+   PUBMED   39155374
+  REMARK    GeneRIF: SelK promotes glioblastoma cell proliferation by
+            inhibiting beta-TrCP1 mediated ubiquitin-dependent degradation of
+            CDK4.
+REFERENCE   2  (bases 1 to 1497)
+  AUTHORS   Ouyang,P., Cai,Z., Peng,J., Lin,S., Chen,X., Chen,C., Feng,Z.,
+            Wang,L., Song,G. and Zhang,Z.
+  TITLE     SELENOK-dependent CD36 palmitoylation regulates microglial
+            functions and Abeta phagocytosis
+  JOURNAL   Redox Biol 70, 103064 (2024)
+   PUBMED   38320455
+  REMARK    GeneRIF: SELENOK-dependent CD36 palmitoylation regulates microglial
+            functions and Abeta phagocytosis.
+REFERENCE   3  (bases 1 to 1497)
+  AUTHORS   Jia,C., Xiang,Z., Zhang,P., Liu,L., Zhu,X., Yu,R., Liu,Z., Wang,S.,
+            Liu,K., Wang,Z., Vasilev,K., Zhou,S., Geng,Z., Liu,X., Zhao,Y.,
+            Gao,Y., Cheng,L. and Li,Y.
+  TITLE     Selenium-SelK-GPX4 axis protects nucleus pulposus cells against
+            mechanical overloading-induced ferroptosis and attenuates
+            senescence of intervertebral disc
+  JOURNAL   Cell Mol Life Sci 81 (1), 49 (2024)
+   PUBMED   38252317
+  REMARK    GeneRIF: Selenium-SelK-GPX4 axis protects nucleus pulposus cells
+            against mechanical overloading-induced ferroptosis and attenuates
+            senescence of intervertebral disc.
+REFERENCE   4  (bases 1 to 1497)
+  AUTHORS   Lv,L., Chai,L., Wang,J., Wang,M., Qin,D., Song,H., Fu,Y., Zhao,C.,
+            Jia,J., Zhao,W. and Jia,M.
+  TITLE     Selenoprotein K enhances STING oligomerization to facilitate
+            antiviral response
+  JOURNAL   PLoS Pathog 19 (4), e1011314 (2023)
+   PUBMED   37023217
+  REMARK    GeneRIF: Selenoprotein K enhances STING oligomerization to
+            facilitate antiviral response.
+REFERENCE   5  (bases 1 to 1497)
+  AUTHORS   Luck,K., Kim,D.K., Lambourne,L., Spirohn,K., Begg,B.E., Bian,W.,
+            Brignall,R., Cafarelli,T., Campos-Laborie,F.J., Charloteaux,B.,
+            Choi,D., Cote,A.G., Daley,M., Deimling,S., Desbuleux,A., Dricot,A.,
+            Gebbia,M., Hardy,M.F., Kishore,N., Knapp,J.J., Kovacs,I.A.,
+            Lemmens,I., Mee,M.W., Mellor,J.C., Pollis,C., Pons,C.,
+            Richardson,A.D., Schlabach,S., Teeking,B., Yadav,A., Babor,M.,
+            Balcha,D., Basha,O., Bowman-Colin,C., Chin,S.F., Choi,S.G.,
+            Colabella,C., Coppin,G., D'Amata,C., De Ridder,D., De Rouck,S.,
+            Duran-Frigola,M., Ennajdaoui,H., Goebels,F., Goehring,L., Gopal,A.,
+            Haddad,G., Hatchi,E., Helmy,M., Jacob,Y., Kassa,Y., Landini,S.,
+            Li,R., van Lieshout,N., MacWilliams,A., Markey,D., Paulson,J.N.,
+            Rangarajan,S., Rasla,J., Rayhan,A., Rolland,T., San-Miguel,A.,
+            Shen,Y., Sheykhkarimli,D., Sheynkman,G.M., Simonovsky,E., Tasan,M.,
+            Tejeda,A., Tropepe,V., Twizere,J.C., Wang,Y., Weatheritt,R.J.,
+            Weile,J., Xia,Y., Yang,X., Yeger-Lotem,E., Zhong,Q., Aloy,P.,
+            Bader,G.D., De Las Rivas,J., Gaudet,S., Hao,T., Rak,J.,
+            Tavernier,J., Hill,D.E., Vidal,M., Roth,F.P. and Calderwood,M.A.
+  TITLE     A reference map of the human binary protein interactome
+  JOURNAL   Nature 580 (7803), 402-408 (2020)
+   PUBMED   32296183
+REFERENCE   6  (bases 1 to 1497)
+  AUTHORS   Casabonne,D., Reina,O., Benavente,Y., Becker,N., Maynadie,M.,
+            Foretova,L., Cocco,P., Gonzalez-Neira,A., Nieters,A., Boffetta,P.,
+            Middeldorp,J.M. and de Sanjose,S.
+  TITLE     Single nucleotide polymorphisms of matrix metalloproteinase 9
+            (MMP9) and tumor protein 73 (TP73) interact with Epstein-Barr virus
+            in chronic lymphocytic leukemia: results from the European
+            case-control study EpiLymph
+  JOURNAL   Haematologica 96 (2), 323-327 (2011)
+   PUBMED   21048031
+  REMARK    GeneRIF: Observational study of gene-disease association and
+            gene-environment interaction. (HuGE Navigator)
+REFERENCE   7  (bases 1 to 1497)
+  AUTHORS   Du,S., Zhou,J., Jia,Y. and Huang,K.
+  TITLE     SelK is a novel ER stress-regulated protein and protects HepG2
+            cells from ER stress agent-induced apoptosis
+  JOURNAL   Arch Biochem Biophys 502 (2), 137-143 (2010)
+   PUBMED   20692228
+REFERENCE   8  (bases 1 to 1497)
+  AUTHORS   Lu,C., Qiu,F., Zhou,H., Peng,Y., Hao,W., Xu,J., Yuan,J., Wang,S.,
+            Qiang,B., Xu,C. and Peng,X.
+  TITLE     Identification and characterization of selenoprotein K: an
+            antioxidant in cardiomyocytes
+  JOURNAL   FEBS Lett 580 (22), 5189-5197 (2006)
+   PUBMED   16962588
+  REMARK    GeneRIF: SelK is a novel antioxidant in cardiomyocytes and is
+            related to the regulation of cellular redox balance.
+REFERENCE   9  (bases 1 to 1497)
+  AUTHORS   Oh,J.H., Yang,J.O., Hahn,Y., Kim,M.R., Byun,S.S., Jeon,Y.J.,
+            Kim,J.M., Song,K.S., Noh,S.M., Kim,S., Yoo,H.S., Kim,Y.S. and
+            Kim,N.S.
+  TITLE     Transcriptome analysis of human gastric cancer
+  JOURNAL   Mamm Genome 16 (12), 942-954 (2005)
+   PUBMED   16341674
+REFERENCE   10 (bases 1 to 1497)
+  AUTHORS   Kryukov,G.V., Castellano,S., Novoselov,S.V., Lobanov,A.V.,
+            Zehtab,O., Guigo,R. and Gladyshev,V.N.
+  TITLE     Characterization of mammalian selenoproteomes
+  JOURNAL   Science 300 (5624), 1439-1443 (2003)
+   PUBMED   12775843
+COMMENT     REVIEWED REFSEQ: This record has been curated by NCBI staff. The
+            reference sequence was derived from BM762385.1, BC013162.1,
+            AJ712004.1 and AC012467.9.
+            
+            On Nov 23, 2018 this sequence version replaced NM_021237.4.
+            
+            Summary: The protein encoded by this gene belongs to the
+            selenoprotein K family. It is a transmembrane protein that is
+            localized in the endoplasmic reticulum (ER), and is involved in
+            ER-associated degradation (ERAD) of misfolded, glycosylated
+            proteins. It also has a role in the protection of cells from ER
+            stress-induced apoptosis. Knockout studies in mice show the
+            importance of this gene in promoting Ca(2+) flux in immune cells
+            and mounting effective immune response. This protein is a
+            selenoprotein, containing the rare amino acid selenocysteine (Sec).
+            Sec is encoded by the UGA codon, which normally signals translation
+            termination. The 3' UTRs of selenoprotein mRNAs contain a conserved
+            stem-loop structure, designated the Sec insertion sequence (SECIS)
+            element, that is necessary for the recognition of UGA as a Sec
+            codon, rather than as a stop signal. Pseudogenes of this locus have
+            been identified on chromosomes 6 and 19.[provided by RefSeq, Aug
+            2017].
+            
+            Publication Note:  This RefSeq record includes a subset of the
+            publications that are available for this gene. Please see the Gene
+            record to access additional publications.
+            
+            ##Evidence-Data-START##
+            Transcript exon combination :: SRR1803616.239828.1,
+                                           SRR3476690.138120.1 [ECO:0000332]
+            RNAseq introns              :: single sample supports all introns
+                                           SAMEA2163105, SAMN03267775
+                                           [ECO:0000348]
+            ##Evidence-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            MANE Ensembl match              :: ENST00000495461.6/
+                                               ENSP00000418813.1
+            protein contains selenocysteine :: PMID: 12775843
+            RefSeq Select criteria          :: based on single protein-coding
+                                               transcript
+            ##RefSeq-Attributes-END##
+            COMPLETENESS: full length.
+PRIMARY     REFSEQ_SPAN         PRIMARY_IDENTIFIER PRIMARY_SPAN        COMP
+            1-491               BM762385.1         130-620
+            492-715             BC013162.1         491-714
+            716-938             AJ712004.1         199-421
+            939-1497            AC012467.9         31121-31679
+FEATURES             Location/Qualifiers
+     source          1..1497
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="3"
+                     /map="3p21.1"
+     gene            1..1497
+                     /gene="SELENOK"
+                     /gene_synonym="HSPC030; HSPC297; SELK"
+                     /note="selenoprotein K"
+                     /db_xref="GeneID:58515"
+                     /db_xref="HGNC:HGNC:30394"
+                     /db_xref="MIM:607916"
+     exon            1..90
+                     /gene="SELENOK"
+                     /gene_synonym="HSPC030; HSPC297; SELK"
+                     /inference="alignment:Splign:2.1.0"
+     CDS             72..356
+                     /gene="SELENOK"
+                     /gene_synonym="HSPC030; HSPC297; SELK"
+                     /note="UGA stop codon recoded as selenocysteine"
+                     /codon_start=1
+                     /transl_except=(pos:345..347,aa:Sec)
+                     /product="selenoprotein K"
+                     /protein_id="NP_067060.2"
+                     /db_xref="CCDS:CCDS54597.1"
+                     /db_xref="GeneID:58515"
+                     /db_xref="HGNC:HGNC:30394"
+                     /db_xref="MIM:607916"
+                     /translation="MVYISNGQVLDSRSQSPWRLSLITDFFWGIAEFVVLFFKTLLQQ
+                     DVKKRRSYGNSSDSRYDDGRGPPGNPPRRMGRINHLRGPSPPPMAGGUGR"
+     misc_feature    129..197
+                     /gene="SELENOK"
+                     /gene_synonym="HSPC030; HSPC297; SELK"
+                     /note="propagated from UniProtKB/Swiss-Prot (Q9Y6D0.3);
+                     transmembrane region"
+     misc_feature    213..353
+                     /gene="SELENOK"
+                     /gene_synonym="HSPC030; HSPC297; SELK"
+                     /note="propagated from UniProtKB/Swiss-Prot (Q9Y6D0.3);
+                     Region: Disordered. /evidence=ECO:0000256|SAM:MobiDB-lite"
+     misc_feature    312..317
+                     /gene="SELENOK"
+                     /gene_synonym="HSPC030; HSPC297; SELK"
+                     /note="Cleavage, by CAPN2. /evidence=ECO:0000250;
+                     propagated from UniProtKB/Swiss-Prot (Q9Y6D0.3); cleavage
+                     site"
+     misc_feature    345..347
+                     /gene="SELENOK"
+                     /gene_synonym="HSPC030; HSPC297; SELK"
+                     /note="Selenocysteine; other site"
+     exon            91..181
+                     /gene="SELENOK"
+                     /gene_synonym="HSPC030; HSPC297; SELK"
+                     /inference="alignment:Splign:2.1.0"
+     exon            182..265
+                     /gene="SELENOK"
+                     /gene_synonym="HSPC030; HSPC297; SELK"
+                     /inference="alignment:Splign:2.1.0"
+     exon            266..352
+                     /gene="SELENOK"
+                     /gene_synonym="HSPC030; HSPC297; SELK"
+                     /inference="alignment:Splign:2.1.0"
+     exon            353..1497
+                     /gene="SELENOK"
+                     /gene_synonym="HSPC030; HSPC297; SELK"
+                     /inference="alignment:Splign:2.1.0"
+     regulatory      475..562
+                     /regulatory_class="recoding_stimulatory_region"
+                     /gene="SELENOK"
+                     /gene_synonym="HSPC030; HSPC297; SELK"
+                     /note="SECIS_element"
+                     /function="essential for recoding UGA to specify
+                     selenocysteine"
+     regulatory      693..698
+                     /regulatory_class="polyA_signal_sequence"
+                     /gene="SELENOK"
+                     /gene_synonym="HSPC030; HSPC297; SELK"
+                     /note="hexamer: AATAAA"
+     polyA_site      715
+                     /gene="SELENOK"
+                     /gene_synonym="HSPC030; HSPC297; SELK"
+                     /note="major polyA site"
+     regulatory      1471..1476
+                     /regulatory_class="polyA_signal_sequence"
+                     /gene="SELENOK"
+                     /gene_synonym="HSPC030; HSPC297; SELK"
+                     /note="hexamer: AATAAA"
+     polyA_site      1497
+                     /gene="SELENOK"
+                     /gene_synonym="HSPC030; HSPC297; SELK"
+                     /note="major polyA site"
+ORIGIN      
+        1 gagcagaggg agatacagaa accgacaggg gccaggcgcc cggtggctcc gaagcgggga
+       61 agtgggacaa gatggtttac atctcgaacg gacaagtgtt ggacagccgg agtcagtctc
+      121 catggagatt atctttgata acagatttct tctggggaat agctgagttt gtggttttgt
+      181 ttttcaaaac tctgcttcag caagatgtga aaaaaagaag aagctatgga aactcatctg
+      241 attccagata tgatgatgga agagggccac caggaaaccc tccccgaaga atgggtagaa
+      301 tcaatcatct gcgtggccct agtccccctc caatggctgg tggatgagga aggtaaatgt
+      361 ctgctctaag aagcagacaa ccggacatgc gcattcatag cagaaggaaa ccatcaagaa
+      421 gtggaaggct gaccatgatg agcagtagat gaatgtgtat gtctaaacaa ggactgctct
+      481 gtgtcctcac agatgaatga ggtcatgctg ggaattccct ctgcagggaa ctggcctgac
+      541 tgacatgcag ttccataaat gcagatgttt gtctcattac ctttttgtat agtttattaa
+      601 agtattaata tagttttaat aagtaaatat ttttaggttg cagaatggac tcctcatctt
+      661 tatattcacg aaaaagcaat ctgaagaaaa caaataaaag cctgtgtatt tagcactgtt
+      721 agtgtcacct tttcaacttc tgaaacactg ttcattgtta actttttctc atttataaat
+      781 cactgtattt attttagtag tatgcatagc atatctgtgc tcttgaatta atttttatct
+      841 ttaacatatt tgtctcatca atctttaata cactgtgtct aatttgctac caaatgtaat
+      901 tatcagggta tttataaaac catagctaac aaaactgagc tacaaaatga aaatttacta
+      961 aatagttttt aaaatcatgg acttcagcct ggcgcggtgg ctcatgcctg taatcccagc
+     1021 actgtgggag gctgaggcgg gcagatcgcc taagttcacg agtttgagac cagcctgcag
+     1081 catgacgaaa cctaaaataa caaaaattag ccaggcgtgg tagagtgcac ctgtaatccc
+     1141 tgctactcag gaggcggagg caggagaatc gcttcaaccc gggaggcgga ggttgctgtg
+     1201 agcatgccac tgcactcctg cctaggcaac agagtgagac cctgtctcaa aaaaataaat
+     1261 aaaaccatgg gcttccatgc tatcttgaca aatttgcact ctatagcatc actcaaaata
+     1321 ctgcctattg gctttaaact ccatctgaat actgataact ttcacattct ttcactagag
+     1381 tggaagctct gagactagga attttgttgt ctttacccca gtcctttgaa tagtgactac
+     1441 atgtaagata gtcatgtagt atttattgga aataaatatt tattggaaaa acgaaaa
+//
+
