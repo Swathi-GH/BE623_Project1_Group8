@@ -42,9 +42,95 @@ def read_fasta(filename):
 
     return sequence
 
+#creating function to extract cds
 
 def extract_cds(sequence, start, end):
 	return sequence[start - 1:end]
 
 
+#checking cds length to see if it is divisible by 3
+
+def check_cds_length(cds_sequence):
+	length = len(cds_sequence)
+
+	if length % 3 == 0:
+		return length, True
+	else:
+		return length, False
+
+#creating genetic code
+
+genetic_code_selenocys = {
+    #Phenylalanine (F)
+    "TTT": "F", "TTC": "F",
+    #Leucine (L)
+    "TTA": "L", "TTG": "L", "CTT": "L",  
+    "CTC": "L", "CTA": "L", "CTG": "L",
+    #Isoleucine (I)
+    "ATT": "I", "ATC": "I", "ATA": "I",
+    #Methionine (M) which is a start codon
+    "ATG": "M",
+    #Valine (V)
+    "GTT": "V", "GTC": "V", "GTA": "V", "GTG": "V",
+    #Serine (S)
+    "TCT": "S", "TCC": "S", "TCA": "S",
+    "TCG": "S", "AGT": "S", "AGC": "S",
+    #Proline (P)
+    "CCT": "P", "CCC": "P", "CCA": "P", "CCG": "P",
+    #Threonine (T)
+    "ACT": "T", "ACC": "T", "ACA": "T", "ACG": "T",
+    #Alanine (A)
+    "GCT": "A", "GCC": "A", "GCA": "A", "GCG": "A",
+    #Tyrosine (Y)
+    "TAT": "Y", "TAC": "Y",
+    #Histidine (H)
+    "CAT": "H", "CAC": "H",
+    #Glutamine (Q)
+    "CAA": "Q", "CAG": "Q",
+    #Asparagine (N)
+    "AAT": "N", "AAC": "N",
+    #Lysine (K)
+    "AAA": "K", "AAG": "K",
+    #Aspartic acid (D)
+    "GAT": "D", "GAC": "D",
+    #Glutamic acid (E)
+    "GAA": "E", "GAG": "E",
+    #Cysteine (C)
+    "TGT": "C", "TGC": "C",
+    #Tryptophan (W)
+    "TGG": "W",
+    #Arginine (R)
+    "CGT": "R", "CGC": "R", "CGA": "R", 
+    "CGG": "R", "AGA": "R", "AGG": "R",
+    #Glycine (G)
+    "GGT": "G", "GGC": "G", "GGA": "G", "GGG": "G",
+    #Stop codons
+    "TAA": "*", "TAG": "*", "TGA": "*",     #for selenocysteine TGA codes for U
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+def translate_cds(cds_sequence, genetic_code):
+	protein = ""
+
+	for i in range(0, len(cds_sequence), 3):
+		codon = cds_sequence[i:i+3]
+		amino_acid = genetic_code[codon]
+		protein = protein + amino acid
+
+	return protein
 
