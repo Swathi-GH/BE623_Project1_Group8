@@ -319,7 +319,7 @@ def process_gene(gene_name, gene_info, genetic_code):
     )
 
 
-# Choose the correct genetic code for each gene
+#genetic code for each gene
 genetic_codes = {
     "SELENOK": genetic_code_nuclear,
     "MT-ND5": genetic_code_mito,
