@@ -1,0 +1,133 @@
+LOCUS       NC_012920               1812 bp    DNA     linear   PRI 03-APR-2023
+DEFINITION  Homo sapiens mitochondrion, complete genome.
+ACCESSION   NC_012920 REGION: 12337..14148
+VERSION     NC_012920.1
+DBLINK      BioProject: PRJNA927338
+KEYWORDS    RefSeq.
+SOURCE      mitochondrion Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 1812)
+  CONSRTM   NCBI Genome Project
+  TITLE     Direct Submission
+  JOURNAL   Submitted (08-JUL-2009) National Center for Biotechnology
+            Information, NIH, Bethesda, MD 20894, USA
+REFERENCE   2  (bases 1 to 1812)
+  AUTHORS   Kogelnik,A.M. and Lott,M.T.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (24-AUG-2006) Mitomap.org, Center for Molecular and
+            Mitochondrial Medicine and Genetics (MAMMAG) University of
+            California, University of California, Irvine, Irvine, CA
+            92697-3940, USA
+  REMARK    Sequence update by submitter
+REFERENCE   3  (bases 1 to 1812)
+  AUTHORS   Kogelnik,A.M. and Lott,M.T.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (18-APR-1997) Center for Molecular Medicine, Emory
+            University School of Medicine, 1462 Clifton Road, Suite 420,
+            Atlanta, GA 30322, USA
+  REMARK    sequence updated
+COMMENT     PROVISIONAL REFSEQ: This record has not yet been subject to final
+            NCBI review. The reference sequence was derived from J01415.
+            
+            On Jul 8, 2009 this sequence version replaced AC_000021.2.
+            This sequence is a corrected version of the HUMMTCG reference
+            sequence.  The original Cambridge reference sequence (CRS) is
+            preserved as GenBank J01415 gi:337188 [PMID:7219534].  Corrections
+            have been made and annotated per the re-sequencing of the original
+            material by Andrews et al [PMID:10508508].
+            
+            This Revised Cambridge Reference Sequence (rCRS) has eighteen
+            specific corrections or confirmations of the original 1981 sequence
+            of Anderson et al [PMID:7219534].  Seven nucleotides are confirmed
+            as rare polymorphisms, maintained as: 263A, 311C-315C, 750A, 1438A,
+            4769A, 8860A, and 15326A.  Eleven nucleotides are error
+            corrections: 3107del, 3423T, 4985A,  9559C, 11335C, 13702C, 14199T,
+            14272C, 14365C, 14368C, and 14766C. These 11 errors in  the
+            original Cambridge sequence were determined to be  either outright
+            sequencing errors (8 instances) or due to the presence of bovine
+            DNA (2 instances) or HeLa DNA (1 instance) mixed in with the
+            original human placental DNA [PMID:10508508].  HISTORICAL
+            NUCLEOTIDE NUMBERS ARE MAINTAINED by indicating 3107del as 'N'.
+            A summary table of the reanalysis data is available online at
+            http://www.mitomap.org/MITOMAP/CambridgeReanalysis
+            
+            L-strand is shown.
+            COMPLETENESS: full length.
+FEATURES             Location/Qualifiers
+     source          1..1812
+                     /organism="Homo sapiens"
+                     /organelle="mitochondrion"
+                     /mol_type="genomic DNA"
+                     /isolation_source="caucasian"
+                     /db_xref="taxon:9606"
+                     /tissue_type="placenta"
+                     /geo_loc_name="United Kingdom: Great Britain"
+                     /note="this is the rCRS"
+     gene            1..1812
+                     /gene="ND5"
+                     /gene_synonym="MTND5"
+                     /nomenclature="Official Symbol: MT-ND5 | Name:
+                     mitochondrially encoded NADH dehydrogenase 5 | Provided
+                     by: HGNC:HGNC:7461"
+                     /db_xref="GeneID:4540"
+                     /db_xref="HGNC:HGNC:7461"
+                     /db_xref="MIM:516005"
+     CDS             1..1812
+                     /gene="ND5"
+                     /gene_synonym="MTND5"
+                     /note="NADH dehydrogenase, subunit 5 (complex I)"
+                     /codon_start=1
+                     /transl_table=2
+                     /product="NADH dehydrogenase subunit 5"
+                     /protein_id="YP_003024036.1"
+                     /db_xref="GeneID:4540"
+                     /db_xref="HGNC:HGNC:7461"
+                     /db_xref="MIM:516005"
+                     /translation="MTMHTTMTTLTLTSLIPPILTTLVNPNKKNSYPHYVKSIVASTF
+                     IISLFPTTMFMCLDQEVIISNWHWATTQTTQLSLSFKLDYFSMMFIPVALFVTWSIME
+                     FSLWYMNSDPNINQFFKYLLIFLITMLILVTANNLFQLFIGWEGVGIMSFLLISWWYA
+                     RADANTAAIQAILYNRIGDIGFILALAWFILHSNSWDPQQMALLNANPSLTPLLGLLL
+                     AAAGKSAQLGLHPWLPSAMEGPTPVSALLHSSTMVVAGIFLLIRFHPLAENSPLIQTL
+                     TLCLGAITTLFAAVCALTQNDIKKIVAFSTSSQLGLMMVTIGINQPHLAFLHICTHAF
+                     FKAMLFMCSGSIIHNLNNEQDIRKMGGLLKTMPLTSTSLTIGSLALAGMPFLTGFYSK
+                     DHIIETANMSYTNAWALSITLIATSLTSAYSTRMILLTLTGQPRFPTLTNINENNPTL
+                     LNPIKRLAAGSLFAGFLITNNISPASPFQTTIPLYLKLTALAVTFLGLLTALDLNYLT
+                     NKLKMKSPLCTFYFSNMLGFYPSITHRTIPYLGLLTSQNLPLLLLDLTWLEKLLPKTI
+                     SQHQISTSIITSTQKGMIKLYFLSFFFPLILTLLLIT"
+ORIGIN      
+        1 ataaccatgc acactactat aaccacccta accctgactt ccctaattcc ccccatcctt
+       61 accaccctcg ttaaccctaa caaaaaaaac tcataccccc attatgtaaa atccattgtc
+      121 gcatccacct ttattatcag tctcttcccc acaacaatat tcatgtgcct agaccaagaa
+      181 gttattatct cgaactgaca ctgagccaca acccaaacaa cccagctctc cctaagcttc
+      241 aaactagact acttctccat aatattcatc cctgtagcat tgttcgttac atggtccatc
+      301 atagaattct cactgtgata tataaactca gacccaaaca ttaatcagtt cttcaaatat
+      361 ctactcatct tcctaattac catactaatc ttagttaccg ctaacaacct attccaactg
+      421 ttcatcggct gagagggcgt aggaattata tccttcttgc tcatcagttg atgatacgcc
+      481 cgagcagatg ccaacacagc agccattcaa gcaatcctat acaaccgtat cggcgatatc
+      541 ggtttcatcc tcgccttagc atgatttatc ctacactcca actcatgaga cccacaacaa
+      601 atagcccttc taaacgctaa tccaagcctc accccactac taggcctcct cctagcagca
+      661 gcaggcaaat cagcccaatt aggtctccac ccctgactcc cctcagccat agaaggcccc
+      721 accccagtct cagccctact ccactcaagc actatagttg tagcaggaat cttcttactc
+      781 atccgcttcc accccctagc agaaaatagc ccactaatcc aaactctaac actatgctta
+      841 ggcgctatca ccactctgtt cgcagcagtc tgcgccctta cacaaaatga catcaaaaaa
+      901 atcgtagcct tctccacttc aagtcaacta ggactcataa tagttacaat cggcatcaac
+      961 caaccacacc tagcattcct gcacatctgt acccacgcct tcttcaaagc catactattt
+     1021 atgtgctccg ggtccatcat ccacaacctt aacaatgaac aagatattcg aaaaatagga
+     1081 ggactactca aaaccatacc tctcacttca acctccctca ccattggcag cctagcatta
+     1141 gcaggaatac ctttcctcac aggtttctac tccaaagacc acatcatcga aaccgcaaac
+     1201 atatcataca caaacgcctg agccctatct attactctca tcgctacctc cctgacaagc
+     1261 gcctatagca ctcgaataat tcttctcacc ctaacaggtc aacctcgctt ccccaccctt
+     1321 actaacatta acgaaaataa ccccacccta ctaaacccca ttaaacgcct ggcagccgga
+     1381 agcctattcg caggatttct cattactaac aacatttccc ccgcatcccc cttccaaaca
+     1441 acaatccccc tctacctaaa actcacagcc ctcgctgtca ctttcctagg acttctaaca
+     1501 gccctagacc tcaactacct aaccaacaaa cttaaaataa aatccccact atgcacattt
+     1561 tatttctcca acatactcgg attctaccct agcatcacac accgcacaat cccctatcta
+     1621 ggccttctta cgagccaaaa cctgccccta ctcctcctag acctaacctg actagaaaag
+     1681 ctattaccta aaacaatttc acagcaccaa atctccacct ccatcatcac ctcaacccaa
+     1741 aaaggcataa ttaaacttta cttcctctct ttcttcttcc cactcatcct aaccctactc
+     1801 ctaatcacat aa
+//
+
